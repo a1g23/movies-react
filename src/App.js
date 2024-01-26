@@ -1,23 +1,52 @@
 import logo from './logo.svg';
 import './App.css';
+import Movies from './components/Movies';
+
 
 function App() {
+
+  const movies = [
+    {
+      name: "movie1",
+      year: "2222",
+      rating: "G",
+      image: "https://www.something.com/image.png"
+
+    },
+    {
+      name: "movie2",
+      year: "2222",
+      rating: "G",
+      image: "https://www.something.com/image.png"
+
+    },
+    {
+      name: "movie3",
+      year: "2222",
+      rating: "G",
+      image: "https://www.something.com/image.png"
+
+    },
+    {
+      name: "movie4",
+      year: "2222",
+      rating: "G",
+      image: "https://www.something.com/image.png"
+
+    },
+    {
+      name: "movie5",
+      year: "2222",
+      rating: "G",
+      image: "https://www.something.com/image.png"
+
+    },
+  ]
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Movies movie={movies}/>
     </div>
   );
 }
